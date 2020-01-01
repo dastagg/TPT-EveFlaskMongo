@@ -6,6 +6,16 @@ MONGO_URI = "mongodb://localhost:27017/eve-course"
 RESOURCE_METHODS = ["GET", "POST", "DELETE"]
 ITEM_METHODS = ["GET", "PATCH", "PUT", "DELETE"]
 
+# DATE_FORMAT = "%d %b %Y" NOTE: this will change how the dates are stored.
+# QUERY_WHERE = "find"
+# QUERY_SORT = "orderby"
+# ALLOWED_FILTERS = []  # -- This would disallow all filters
+# ALLOWED_FILTERS = ['lastname'] -- This would only allow filters on lastname
+# SORTING = True
+# MONGO_QUERY_BLACKLIST = ['$where']  -- would allow $regex to work
+# PAGINGATION = False
+
+
 # domain definition
 people_schema = {
     "firstname": {"type": "string", "minlength": 1, "maxlength": 30,},
